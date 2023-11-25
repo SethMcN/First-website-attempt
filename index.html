@@ -8,18 +8,17 @@
         h2 {text-align: center;}
         h3 {text-align: center;}
         h4 {text-align: center;}
-        #image {
-            display: none;
-        }
     </style>
 
-<script src="index.js"></script>
+
+
     
 </head>
 
 <body style="background-color: beige;">
     
-    <script src="index.js"></script>
+    
+    <link rel="stylesheet" href="index.css">
 
 
     <h1>I like burgers!!!!<h1>
@@ -36,13 +35,45 @@
     <br>
     <br>
     <br>
-    <br>
-    <button style="background-color: black;color: brown;">DONT CLICK!!!</button>
+    <p>Draw your own burger: </p>
+    </script>  
+    <div id="sketch">
+  <canvas id="paint"></canvas>
+</div>
+<script src="index.js"></script>
+<div id="settings"> Colours
+  <button onclick="getColor('red');"">Red</button>
+  <button onclick="getColor('yellow');">Yellow</button>
+  <button onclick="getColor('orange');">Orange</button>
+  <button onclick="getColor('green');">Green</button>
+  <button onclick="getColor('blue');">Blue</button>
+  <button onclick="getColor('purple');"">Purple</button>
+  <button onclick="getColor('pink');"">Pink</button>
+  <button onclick="getColor('brown');">Brown</button>
+  <button onclick="getColor('white');">White</button>
+  <button onclick="getColor('#faead1');">Off Yellow</button>
+  <button onclick="getColor('black');">Black</button>
+  <button onclick="getColor('#333333');">Eraser</button>
+</div>
 
-    <form>
-        <input type="button" value="Start machine" />
-      </form>
-      <p>The machine is stopped.</p>
+<div id="settings"> Brush Size
+      <button onclick="getSize('1');">X Small</button>
+      <button onclick="getSize('5');">Small</button>
+      <button onclick="getSize('10');">Med</button>
+     <button onclick="getSize('20');">Large</button>
+     <button onclick="getSize('50');">X Large</button>
+     <button onclick="getSize('80');">XX Large</button>
+    <script src="index.js"></script>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 </body>
 
 </html>
